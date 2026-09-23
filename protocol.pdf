@@ -1,0 +1,87 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2619 >>
+stream
+BT
+/F1 11 Tf
+50 780 Td
+15 TL
+/F2 15 Tf
+(Incident Response and Change Management Protocol) Tj T*
+(Document ID: OPS-PRC-004    Version: 1.3    Effective Date: 2026-09-01) Tj T*
+(Classification: Internal) Tj T*
+T*
+(1. Purpose) Tj T*
+(This protocol defines the mandatory procedure for responding to production) Tj T*
+(incidents and for approving, executing, and rolling back changes to) Tj T*
+(production systems.) Tj T*
+T*
+(2. Severity Classification) Tj T*
+(SEV-1: Complete service outage or confirmed data loss. Response within 15) Tj T*
+(minutes. All-hands bridge required. Executive notification within 1 hour.) Tj T*
+(SEV-2: Major feature unavailable or severe degradation. Response within 1) Tj T*
+(hour. On-call engineer plus backup required.) Tj T*
+(SEV-3: Minor degradation with workaround available. Response within 4) Tj T*
+(business hours. Handled by on-call engineer.) Tj T*
+T*
+(3. Incident Response Procedure) Tj T*
+(Step 1: Detect and acknowledge. The on-call engineer acknowledges the alert) Tj T*
+(within the response window and opens an incident ticket.) Tj T*
+(Step 2: Triage. Classify severity, identify affected services, and assemble) Tj T*
+(the response team. For SEV-1, open the incident bridge immediately.) Tj T*
+(Step 3: Mitigate. Prefer rollback or feature-flag disablement over forward) Tj T*
+(fixes during active user impact. All mitigation actions are logged in the) Tj T*
+(incident ticket with timestamps.) Tj T*
+(Step 4: Resolve and verify. Confirm restoration via monitoring and) Tj T*
+(customer-facing checks before closing the incident.) Tj T*
+(Step 5: Post-mortem. For SEV-1 and SEV-2, a blameless post-mortem is due) Tj T*
+(within 5 business days, covering timeline, root cause, and action items.) Tj T*
+T*
+(4. Change Management Protocol) Tj T*
+(All production changes require a reviewed pull request, passing CI, and) Tj T*
+(an approved change ticket. Changes are deployed during approved windows) Tj T*
+(only, except emergency fixes for SEV-1/SEV-2, which require on-call) Tj T*
+(manager approval and a retrospective review the next business day.) Tj T*
+T*
+(5. Rollback Protocol) Tj T*
+(Every deployment must have a tested rollback path. Rollback is initiated) Tj T*
+(automatically if error rates exceed 2x baseline for 10 minutes post-deploy,) Tj T*
+(or manually by the deploying engineer or on-call manager.) Tj T*
+T*
+(6. Communication) Tj T*
+(SEV-1: status page update every 30 minutes. SEV-2: hourly updates. All) Tj T*
+(incident communications are coordinated by the incident commander;) Tj T*
+(engineers do not communicate directly with customers during an incident.) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000002928 00000 n 
+0000002998 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3073
+%%EOF
